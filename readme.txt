@@ -3,7 +3,8 @@
 最小構成でubuntuのvm起動
 -O/S,インスタンスタイプとも、無料利用枠の対象で十分
 -Role:iwamoto-EC2-Snapshots-roleを付与
-(AmazonEC2FullAccessを持つRoleなら何でも良い)
+(AmazonEC2FullAccessポリシーを持つRoleなら何でも良い)
+SEアカウントはIAM関連の権限不足でエラーをはきまくりますが、Role作成は出来るようです。
 
 git clone https://github.com/IRISMeister/icm_keyless.git
 cd icm_keyless
