@@ -8,14 +8,16 @@
 git clone https://github.com/IRISMeister/icm_keyless.git
 cd icm_keyless
 
-getkits.shのexport内容を修正。
+vi runall.sh
+(WRC_USERNAME='xxx' WRC_PASSWORD='xxx'　を修正)
 
-vi envs.sh  (cpfをminに)
+iris.keyを~/に配置。 (s3? scp? copy&paste?)
 
 $ ./runall.sh
 
-$ ./run.sh
+vi envs.sh  (必要ならcpfをminに)
+$ sudo ./run.sh
 
-$ ./rm.sh MyIRISRAW
+$ sudo ./rm.sh MyIRISRAW
 
 
