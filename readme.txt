@@ -13,4 +13,8 @@ vi envs.sh  (cpfをminに)
 
 $ ./runall.sh
 
+$ ./run.sh
+
+$ ./rm.sh MyIRISRAW
+
 
