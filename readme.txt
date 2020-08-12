@@ -17,6 +17,7 @@ iris.keyを~/に配置。 (s3? scp? copy&paste?)
 $ ./runall.sh
 
 vi envs.sh  (必要ならcpfをminに)
+vi defaults/aws/ubuntu/defaults.json　　(mirrorならMIRROR:trueに)
 $ sudo ./run.sh
 
 $ sudo ./rm.sh MyIRISRAW
