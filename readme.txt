@@ -5,13 +5,9 @@ AWSアクセスキーなしでicmを実行する
 -インスタンスにRole:(AmazonEC2FullAccessポリシーを持つRoleなら何でも良い)を付与。
 
 $ git clone https://github.com/IRISMeister/icm_keyless.git
-$ cd icm_keyless
-$ vi runall.sh
-(WRC_USERNAME='xxx' WRC_PASSWORD='xxx'　を修正)
+iris.keyを~/に配置。 (s3? scp? copy&paste? whatever)
 
-iris.keyを~/に配置。 (s3? scp? copy&paste?)
-
-$ ./runall.sh
+$ WRC_USERNAME='xxx' WRC_PASSWORD='xxx' kit='IRIS-2020.1.0.215.0-lnxubuntux64.tar.gz' icmkit='icm-2020.1.0.215.0-docker.tar.gz' ./icm_keyless/runall.sh
 
 この時点で、下記を実行できるはず。
 $ aws ec2 describe-instances
